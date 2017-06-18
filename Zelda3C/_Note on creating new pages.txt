@@ -1,0 +1,5 @@
+To rename or create a page edited by Word, you cannot rename nor copy the html file!
+Renaming causes the corresponding folder to be orphaned.
+Copying to same folder is prevented.  Copying to alternate folder copies the corresponding folder as well.
+
+The correct method is to open the file in Word and then Save-As to create a new html file.

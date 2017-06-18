@@ -1,0 +1,158 @@
+<HTML><HEAD>
+<TITLE>Zelda 3 Challenge ~ Quest for Calatia</TITLE>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="keywords" content="emulation, emulate, emu, roms, emulating, NESticle, final fantasy, NES, SNES, Nintendo, message board, hacker's forum, hack, hacking, hackers, megaman, metroid, samus, goonies, ghost's 'n goblins, mario, luigi, super, super mario, challenge, smb3c, cg, metroidc, smbc, zeldac, zelda3c, zelda, the legend of zelda, link, hotm, hotw, hack of the month, hack of the week, hf, peach, x-4000, GameMakr24">
+<meta name="description"
+content="Zelda 3 Challenge ~ Quest for Calatia - A complete rewrite of A Link to the Past.">
+<style fprolloverstyle>A:hover {color: #ABB4D3; text-decoration: underline}</style></HEAD>
+
+<BODY text=#AAAAAA bgColor=#000000 leftMargin=0 topMargin=0 link="#6a78b1" vlink="#6a78b1" alink="#6a78b1" background="triforce.gif">
+
+<table border=0>
+<tr><td><pre>     </pre></td>
+<td width=800>
+
+<FONT face="Arial" size=3>
+<br><br>
+
+<center>
+
+<img src="z3c-logo.jpg" alt="Banner courtesy of Ouranos">
+<br><br><br>
+
+</center>
+
+<a href="mailto:zack76@juno.com">
+<img src="gamemakr24.gif" alt="GameMakr24" border="0">
+</a><p>
+
+<h2>August 2, 2004</h2>
+
+Today I have officially completed all aspects of the outside of Epoch Tower.  This huge structure is nested among trees on the outskirts of an uncompleted forest, just north of a mostly-completed town.  While important in its own right, this building marks my first success at creating a totally new location that does not consist of parts from the original game.  Because of the nature of its design, my wife has convinced me not to show screen shots until much later on.  Trust me, though, it's not an ordinary tower...
+<br><br>
+
+Now that I've finally closed this chapter of the project, I have a choice to make.  Either I can continue creating new overworld areas that require new parts, or I can focus on the indoors for a change.  If I stay outside, I'll definitely shift to Calatia Castle, which *will* have screen shots released.  If I jump to interiors, I'll probably create the inside of Epoch Tower, which bears a significant part of the game's opening story.
+<br><br>
+
+<hr><br>
+
+<h2>July 21, 2004</h2>
+
+I've improved my 8x8 Editor, which greatly increases my ability to create the overworld.  Since I've never posted about this editor in detail, now is a good time to explain why my time has gone into more programming, instead of using Hyrule Magic by itself.  (Please don't email requests for copies of any of my Zelda 3 programs.)<br><br>
+
+First, let's review Zelda 3's overworld composition.  The whole thing is created with 8x8 blocks, which are tiles that have properties (collision, door entry, swimming, climbing, etc) and x-flip, y-flip, palette, and in-front (layer) settings.  For example, a single 8x8 block is an animated flower, which is solid ground, not flipped graphically, grass palette, and never drawn in front of sprites.  In the game, 8x8 blocks are always grouped four at a time into 16x16 blocks.  An example is a bush, which can be cut or lifted.  Two of its 8x8 blocks are x-flipped.  When creating new areas in Zelda 3, you must place 32x32 blocks, which are groups of four 16x16 blocks.  For example, you might place four bushes at once, or an entire tombstone, or a portion of a tree.<br><br>
+
+Unless you have a brilliant computer-like mind, or a program like I've written, or lots paper, erasers, and patience, you're going to mostly place 32x32 blocks across an overworld area in a new arrangement to create a new area.  When using this method, I use a search engine for 32x32 blocks, which works great for trees, bushes, mountains, water, fence, and other common things.  But it's difficult and often impossible to create anything with special, area-specific blocks.  One example is Hyrule Castle.  Its blocks were designed for that castle alone, and rearranging them to get a new castle is a limited task.  Another example is the Lost Woods.  The forest with all its grass-walls and logs is hard to create from scratch, using only the blocks that were needed to make the original.  And what about old areas that won't exist at all?  I have no need for the East Palace blocks, while I have a great need for blocks for areas that never existed in the original game.<br><br>
+
+And so, my completed program is the solution.  Here's how I use it.  First, I design on graph paper an entire building, a section of an area, or a series of large "objects" (like statues or bridges) to be used multiple times.  While actually writing the program, I was testing it by trying to create Epoch Tower, which is now almost done.  After drawing the clock tower on graph paper, I numbered each 8x8 block (each being flower-sized) and listed each requirement.  (91, total!)  I overwrote the graphics of Sanctuary and the Witch's Hut with Epoch Tower graphics.  These bitmaps are imported into my program, which is an automated Excel spreadsheet.  (I used Excel VBA almost exclusively when creating ZeldaC, by the way.)  The spreadsheet (aka the canvas) is composed of many 8x8 cells, and I just click on a cell to 'draw' the most recently chosen block in the menu.  Before placing the block, however, I push a few buttons to toggle the settings described above.  After the canvas is filled with a portion of my graph paper design, I push a button to translate the canvas' info into commands for Hyrule Magic.  That is, it creates a series of instructions that I read and follow while using Hyrule Magic.  When I'm done, the new building, maze, or object collection has been added to the game!<br><br>
+
+There's a lot more to this procedure than I've described, such as determining which blocks can be replaced with my new blocks.  Following this process and using this new program, I can easily create anything in the overworld that I need.<br><br>
+
+Without spoiling too much, here are just a few of my plans:<br><br>
+
+- Epoch Tower, a very tall clock tower.<br>
+- Calatia Castle, a new castle from scratch.<br>
+- New types of houses and town objects.<br>
+- Totally different areas, with new paths and secrets.<br>
+- Several large buildings I won't disclose.<br>
+- Various dungeon-related outdoor objects.<br>
+- Palm trees, icicles, giant mushrooms, barb-wire fence.<br>
+- Cloud ledges, secret doors, false walls, pools of lava.
+<br><br>
+
+It's taken a long time, but the program is worth the effort!
+<br><br>
+
+<h2>July 6, 2004</h2>
+
+A few months ago, I ran into some serious problems in Zelda3C.  I was designing the outdoor entrance section of a really tall tower, but I created it incorrectly because of some misunderstandings of how the game works.  Lots of my 16x16 and 32x32 blocks were useless because I thought the "in front" attribute always meant Link could walk behind it.  Further, I'd mixed up the various block types which are used for walls.  I had meant for Link to walk under certain platforms, but they were blocking him, and I had no easy way of managing all the blocks that needed fixing.
+<br><br>
+At the same time, I had a lot going on in real life, and I had certain games calling me, reminding me that I, too, am a gamer.  So I let my frustrations get the best of me, and forgot about the project for a while.
+<br><br>
+Well, this 4th of July weekend was 3 days long, and I finally had lots of free time.  I spent most of it resolving all the issues that came up while creating the tower's foundation, and now I'm about to place the new blocks and move on to something new.  I can't wait to get home from work and get busy again.  My methods for handling these sort of problems are greatly improved (and written out!), so I should be able to create other outdoor structures a lot easier.
+<br><br>
+Sorry I let all the chaos push me away.  I'm back to thinking about the game every day, again, so progress will continue every time it's possible.
+<br><br>
+
+<h2>January 28, 2004</h2>
+
+GameMakr24,<br><br>
+
+6 months and no updates? Is this game dead? If so, it's very understandable, if not, then what's happening over in Calatia?<br><br>
+ 
+Nathan<br><br>
+
+The above is a sample email I sometimes receive, from people wondering what's up.  But today, when I received an email that said "6 months", I had to see it to believe it!<br><br>
+
+Yes, it's true, I'm a stranger to my own web page.  I often forget there's a place where I can write out my latest accomplishments, and that many people stop by.  There are several reasons why this bizzarre trait in my project takes form:<br><br>
+
+- Whenever I get free time that can be allotted to Zelda3C, it's allotted to the game itself.  I quickly rush back into whatever I was working on, and I don't stop until I have to, so there's no time saved for reporting anything.<br><br>
+
+- The kind of work I've been doing all this time is not something that, in written form, can really be appreciated by many people.  It takes as much time to plan a dungeon as to actually lay out the objects and attributes.  And screen shots are spoiling and take time to do frequently.<br><br>
+
+- A lot of my time has been spent programming, believe it or not.  Yes, there's Hyrule Magic, and the program is a dream come true, but it's only for making actual changes to the game.  I've written several programs to give me instant answers, the latest of which grants graphics set numbers based on the combination of sprites I want to use in an area.  Describing these would indeed make the project seem more alive, but they would also result in emails from people begging to have copies of code I haven't made "self-explanitory" nor safe for other users.
+<br><br>
+
+Well, I don't think this non-updating trend will last forever.  I'm getting closer to having all the tools I need readily available, and when that happens I'll be creating worlds and dungeons with ease.  I plan to have charts posted that show how much of each section of the game is complete, with individual percentages and everything.  It'll be worth visiting the site regularly for. <br><br>
+
+Now then, I could spend some time talking about Zelda3C, couldn't I?  Let's see, it's time to address two All Important Questions.<br><br>
+
+"Why aren't there more screenshots?"<br><br>
+
+If creating Zelda3C is like building a jigsaw puzzle,
+then I've spent a long time just getting the box open,
+followed by an extremely long time of sorting the pieces.<br><br>
+
+Have you ever invested a lot of time into sorting puzzle pieces,
+only to have someone walk in and say, "Gee, you haven't done anything yet!"
+After all the labor of planning and sifting, it's a hard response to take!<br><br>
+
+Or maybe you've spent some time taking the border-edge pieces and placing them together, just for the sake of having order to your project and knowing where things will go as you put them together.  To the untrained eye, the border is nothing compared to the bulk of the puzzle, but there's a feeling of chaos if you don't have that frame there.<br><br>
+
+Ever try building a puzzle *without* sorting the pieces!  It's insanely harder, since you're randomly taking one piece out of 5000 and seeing if it connects to what you've done so far.
+<br><br>
+
+That's how Zelda 3 hacking is, if all you do is open the box that is Hyrule Magic and start trying to piece things together.  Many pieces have to be found multiple times, while others must be first be created.  There are 8000+ overworld blocks, and even with this filter system, I'm always searching, always arranging until everything fits.  It's fun, I love doing it, and I'm getting faster at it!  ;)  I'm so proud of the last area I created, I took a screen capture of it and made it my desktop background...<br><br>
+
+Unless you're systematic, taking on any large-scale project is beyond daunting -- it's sure to fail.  I've taken the divide-and-conquer approach to Zelda3C, abiding by the "Ask questions now, shoot later" philosophy.  Game design is *at least* 50% preparation.  I hate to do any work that I'll have to undo later, or create something that's not compatible with the great scheme of things.<br><br>
+
+So, when the average person visits this Zelda3C page, and wonders where the screen shots are, I hope they understand this message.  Once the pieces can start falling into place, they'll fall FAST.  Only then will I have something to "show" for all my hard work, and even then it will be limited by the risk of spoilers.  And you *don't* want to get me started about the evils of spoilers.  ;)<br><br>
+
+"What's the latest?"<br><br>
+
+Zelda3C is nowhere if not completely well thought-out.  I know *so much* about where the game is "going", what kinds of new puzzles there are, how the story flows, which graphics, music, monster situations and quest scenarios will be used, it's almost as if I've played the new game myself.  But of course I haven't -- far from it -- most of the game exists as maps and layouts on paper, along with spreadsheets packed with ROM information, new monologue, intended usage of overworld and dungeon settings, realm descriptions / expectations and how they correlate, and tons more data that add up to be the blueprints of Calatia.  All this, coupled with my own programming (alongside the indispensable Hyrule Magic), tables of sprites, objects, backgrounds, etc, fit with my expanded knowledge of how Zelda 3 actually works.  So I have most of the hard work behind me!<br><br>
+
+And, I have good news:  None of these resources and concepts, accumulated in my spare time for over two years now, is sitting idly nor collecting dust.  I've been actively working with this game *daily*, never tiring of it (NOT A CHANCE!), stopping only when the real world demands it.  Life has inevitably settled down again, and I've long since found ways to squeeze progress out of my difficult schedule.  Now if only I were this dedicated to actually updating the web site!<br><br>
+
+In the past months, I've stockpiled a new collection of puzzles and floorplans, created during lunch breaks and spare time after work.  Weekends have been partly abducted by Kingdom Hearts and Prince of Persia, but hey, I'm a gamer too!  Fear not, I can't hog the PS2 to myself all day, and I love the chance to work uninterrupted for consecutive hours at a time!<br><br>
+
+It's amazing how even small changes to the game leave me giddy with happiness the entire next day.  "Ah, actual *progress*!"  One night before bed I created three new graphics and inserted them into the game.  They turned out better than I'd hoped (I'm practically an artist!) and my mind kept jumping to them the following day.  You may think it takes very little to make me happy, but when your mind is on something this often and there's suddenly something new to think about, it's exhilerating.<br><br>
+
+I'm slowly designing overworld areas in a specific path, leading toward the first dungeon.  When I finish the outside of that dungeon, I'm going to work with Sephiroth3 regarding room header data control.  (the last major issue to resolve)  So if you're reading this, Seph, you've been warned, hahahah.  But I generally like to create the game in order of appearance, for reasons such as making the difficulty level increase as I get better at making it challenging.  I have several more areas to create before that point, so I'll be ecstatic when I finally get there.  (The entire world map is sketched out on paper.)<br><br>
+
+I've completed the first small cave system in the game (indoors area) and I'm concentrating on the first village (outdoors area).  I've already had to edit several town blocks to get houses placed without extra or missing elements sitting beside them, but again, the puzzle pieces don't all exist yet.   Finishing the town won't be too difficult, and then I'll move on toward areas I dare not describe...<br><br>
+
+Well, since no one IRL is closely following my progress and I have no one to talk to about how much fun I'm having, this has been a good place to release my thoughts.  If you're reading this, write me and say so; it'll encourage me to make this place more of a Zelda3C diary.  I guess that's all I have to present for now, since I'm too sleepy to describe my experiments on the game's bosses.  'Till next time!<br><br>
+
+... Or wait, were you hoping for new screenshots?<br><br>
+
+<a href="batch4.html">Batch 4 - Welcome to Calatia</a><br><br>
+
+<hr><br>
+
+<a href="mailto:zack76@juno.com">
+<img src="gamemakr24.gif"
+alt="GameMakr24" border="0" align=left>
+</a><br>
+Questions? Ideas? Suggestions?<br>
+<a href="mailto:zack76@juno.com">
+Write to me!</a>
+<br><br><br>
+
+<a href="index.html">Return to Zelda3C's main page</a>
+<br><br>
+
+<hr><br>
+This site is not affiliated with nor endorsed by Nintendo in any way.<p><p>
+</td></tr></table></font>
+</BODY></HTML>

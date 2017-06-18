@@ -1,0 +1,92 @@
+<HTML><HEAD>
+<TITLE>Zelda 3 Challenge ~ Quest for Calatia</TITLE>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="keywords" content="emulation, emulate, emu, roms, emulating, NESticle, final fantasy, NES, SNES, Nintendo, message board, hacker's forum, hack, hacking, hackers, megaman, metroid, samus, goonies, ghost's 'n goblins, mario, luigi, super, super mario, challenge, smb3c, cg, metroidc, smbc, zeldac, zelda3c, zelda, the legend of zelda, link, hotm, hotw, hack of the month, hack of the week, hf, peach, x-4000, GameMakr24">
+<meta name="description"
+content="Zelda 3 Challenge ~ Quest for Calatia - A complete rewrite of A Link to the Past.">
+<style fprolloverstyle>A:hover {color: #ABB4D3; text-decoration: underline}</style></HEAD>
+
+<BODY text=#AAAAAA bgColor=#000000 leftMargin=0 topMargin=0 link="#6a78b1" vlink="#6a78b1" alink="#6a78b1" background="triforce.gif">
+
+<table border=0>
+<tr><td><pre>     </pre></td>
+<td width=800>
+
+<FONT face="Arial" size=3>
+<br><br>
+
+<center>
+
+<img src="z3c-logo.jpg" alt="Banner courtesy of Ouranos">
+<br><br><br>
+
+</center>
+
+<a href="mailto:zack76@juno.com">
+<img src="gamemakr24.gif" alt="GameMakr24" border="0">
+</a><br><br>
+
+<h2> Zelda3C Diary </h2>
+
+<b>June 13, 2010</b><p>
+
+It's a good afternoon and things are getting back on track.  If you've been following the latest <a href="http://www.miraigamer.net/forums/showthread.php?t=3685">thread</a>, you already know I've regained focus the past few weeks.  I'm only just updating the diary because getting the old computer running is a time-consuming inconvenience.  (I really need to get an FTP client on my Vista laptop.)  As promised, I have a few screenshots to display what I'm up to.<p>
+
+<center><img src="images/2010-6-13_west_cliffs.gif" alt="Before and after creating new blocks."><p></center>
+
+How many differences can you find, above?  Each one represents an exact 32x32 block that doesn't exist in Zelda 3.  This is a good visual of my routine when creating new areas.  First I build the general area while ignoring small areas that can't yet be finished.  Then I go back over the land, filling in the missing pieces by making them in my Excel program.  I know that most of these imperfections seem like they <i>must</i> have adjustments in the game already, but remember that these blocks are combinations of four 16x16 blocks -- there's no way every combination could exist.  Below, the exact blocks needed are displayed in my Excel editor, along with a few that already existed but are placed for reference during development.<p>
+
+<center><img src="images/2010-6-13_editor.gif" alt="The blocks that didn't yet exist."><p></center>
+
+Please don't ask for a copy of my Excel editor -- it's not for distribution.  (It's not friendly to the average user, I won't support it for others' requests, it's *my* toy, etc.)  This may be the first time I've actually shown a screenshot of the tile-level editor...  I can go into detail on what various buttons do if anyone's curious.  And yes, the flowers (and a few other graphics) do not have normal palettes -- displaying palettes beyond defaults is one of the limitations; flowers happen to be stored in the same set as water tiles.<p>
+
+So, I create the new 32x32 blocks at the 8x8 (tile) level, import them into Hyrule Magic, and then place them in the game.  This is what I've been doing for years, whenever I'm making progress.  The reason it's gotten easier is because I've written mouse-control code which automated my mouse across HM, quickly clicking and copying ALL 32x32 block numbers into the workbook to serve as an initial cache of blocks.  This saves me lots of time in having to look blocks up to make sure they don't actually exist already, as well as letting me pull them onto the canvas so that I don't start from scratch when building.  (I actually did this for the 16x16 blocks a while back; this new addition was a long time coming.)<p>
+
+The only way I can imagine a better process would be to increase the canvas size from just 4x7 blocks to a 256 block matrix -- big enough to build an entire area (or 1/4 of a large area) before importing the whole thing into HM.  It's tempting, but generally I like to make additions of this smaller size anyway and then test them in-game before moving on to the next canvas.  Looking at my saved canvas sheets, in the past, I filled 5 canvases for the dam, 10 for the village houses, 31 for the forest, 5 for Epoch Tower, and 23 of them for the castle.  And I have so many more ahead of me!  lol<p>
+
+In closing, I'm currently focused on the cliffs west of Truce Dam.  They don't require new 16x16 blocks, nor any new graphics, for the most part, so they should come together without much trouble.  When this area is finished, the next new area will be further west, where the river diverted by the dam runs into parts unknown...<p>
+
+<center>
+<img src="mini-tri.gif"> What are your thoughts? <img src="mini-tri.gif"> Reply on the <a href="http://www.miraigamer.net/forums/forumdisplay.php?f=53">Zelda3C Message Board</a>! <img src="mini-tri.gif"><p>
+</center>
+<hr><br>
+
+<b>March 07, 2010</b><p>
+
+No progress.  Well, no progress this year, yet.  Last year I wrote some mouse automation code to extract from Hyrule Magic all of the 32x32 blocks, just as I had done for the 16x16 blocks a while back.  This lets me know much faster which large overworld blocks (size of 4 bushes, or 4 rocks, etc) already exist in the game.  It's basically a new approach for efficiency in creating the outdoors.  At this point I was supposed to write code to take advantage of this newly collected data, which won't be hard to write.<p>
+
+Late last year, the basement flooded when the hose disconnected from our washing machine.  We woke up the next morning with a few inches of water standing at the bottom of the steps.  Imagine my brother's surprise when he jumped out of bed and his feet landed in water!  Nothing Zelda3C-related was harmed, but the nightmare was just beginning.<p>
+
+We spent the next few weeks drying things out, salvaging what we could, and throwing a lot of stuff away.  As we cleaned, we discovered a pre-existing mold problem on the walls and on the backs of furniture.  This required more scrubbing, trashing, etc.  Also, lightning (yes, lightning, AGAIN!) knocked out the exact wall socket where I run my computer, and there are very few wall sockets downstairs.  (This is still not replaced; I'm upstairs now.)  So my "inner sanctum" was soggy, smelly, and powerless for a long time.  The downstairs is mostly back to normal now, but my "Zelda3C mindset" is still not where it should be.<p>
+
+I have a happy reason, for a change, to not work on the game:  My wife has recently given birth to our first daughter!  She's almost 12 weeks old now, really cute, and of course very needy.  :)  Long-time readers know that I always put family first; you can imagine I've stayed busy helping with diapers, spit-up rags, etc...  But mostly, I've been more hands-on with my son, who is now 4 years old.  He has reached the age where he understands a lot and is easier to play with, lol...<p>
+
+There have been other reasons not to squeeze in any game design time, such as finally getting an XBox 360, not to mention all the fun I have on my DS.  My career is as busy as ever.  Life events are always coming up.<p>
+
+Most people probably think this game will never be finished at this rate, and at this rate, they'd be right.  I rarely receive fan mail anymore and I haven't heard from any of the team members.  I love all the developments of the past, and I'm sure as I get into it, I'll be reminded why this game is so important to me.  The work involved doesn't bother me, but what I do hate is spending time remembering how everything works only to have no chance to continue for another few weeks.<p>
+
+As I write this, no one else is home and I know I have several hours to myself.  Even though I know circumstances still aren't right to make leaps and bounds, I'm going to ease back into the project and see if I get hooked.  Otherwise I may find myself waiting even longer for "things to calm down", which may not be a reasonable expectation.  No matter what, I'll keep stubbornly trying to complete this rewrite of my favorite SNES game...<p>
+
+<center>
+<img src="mini-tri.gif"> What are your thoughts? <img src="mini-tri.gif"> Reply on the <a href="http://www.miraigamer.net/forums/forumdisplay.php?f=53">Zelda3C Message Board</a>! <img src="mini-tri.gif"><p>
+</center>
+
+<hr><br>
+
+<a href="mailto:zack76@juno.com">
+<img src="gamemakr24.gif"
+alt="GameMakr24" border="0" align=left>
+</a><br>
+Questions? Ideas? Suggestions?<br>
+<a href="mailto:zack76@juno.com">
+Write to me!</a>
+<br><br><br>
+
+<a href="index.html">Return to Zelda3C's main page</a>
+<br><br>
+
+<hr><br>
+This site is not affiliated with nor endorsed by Nintendo in any way.<p><p>
+
+</td></tr></table></font>
+</BODY></HTML>

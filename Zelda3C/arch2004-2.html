@@ -1,0 +1,281 @@
+<HTML><HEAD>
+<TITLE>Zelda 3 Challenge ~ Quest for Calatia</TITLE>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="keywords" content="emulation, emulate, emu, roms, emulating, NESticle, final fantasy, NES, SNES, Nintendo, message board, hacker's forum, hack, hacking, hackers, megaman, metroid, samus, goonies, ghost's 'n goblins, mario, luigi, super, super mario, challenge, smb3c, cg, metroidc, smbc, zeldac, zelda3c, zelda, the legend of zelda, link, hotm, hotw, hack of the month, hack of the week, hf, peach, x-4000, GameMakr24">
+<meta name="description"
+content="Zelda 3 Challenge ~ Quest for Calatia - A complete rewrite of A Link to the Past.">
+<style fprolloverstyle>A:hover {color: #ABB4D3; text-decoration: underline}</style></HEAD>
+
+<BODY text=#AAAAAA bgColor=#000000 leftMargin=0 topMargin=0 link="#6a78b1" vlink="#6a78b1" alink="#6a78b1" background="triforce.gif">
+
+<table border=0>
+<tr><td><pre>     </pre></td>
+<td width=800>
+
+<FONT face="Arial" size=3>
+<br><br>
+
+<center>
+
+<img src="z3c-logo.jpg" alt="Banner courtesy of Ouranos">
+<br><br><br>
+
+</center>
+
+<a href="mailto:zack76@juno.com">
+<img src="gamemakr24.gif" alt="GameMakr24" border="0">
+</a><br><br>
+
+<b>December 2, 2004, Part 1: Emails</b> - First, I have to say how great (and overwhelming) the volume of Zelda3C email has been these past two weeks.  I guess I should be careful what I wish for -- I don't have nearly enough time to reply to everyone, yet.  :)  It's clear that this diary has a regular audience.  Since I can't respond to everyone until much later, I'd like to write replies to some general questions here.  Even this seems daunting, since there are so many messages to open and skim through.  (I always read all my email, that's never going to change.)<br><br>
+
+Offers for beta testing have become frequent.  I have a list of people who are definitely going to help test, yet I want to include many more people, to be safe.  ...I'll never forget that @$%&#^ Ice Cave Bug. =/ ... The official beta test roster will be compiled when the game is almost finished.  The best way to be included is to write often and communicate well.  Remember that you might not want this job, since it could take away from the overall, complete experience...<br><br>
+
+There is no estimated release date.  I'm not sure if I'll release a town/dungeon beta.  I'm never going to hit burn-out.  I won't spend too much time on a single area.  I don't usually investigate problems / offer advice for other Zelda 3 hacks.  ... These aren't bad questions to ask me, but I feel bad or guilty when I can't respond the way I'd like.<br><br>
+
+Because I mentioned music in my last post, I've had some questions about it.  I haven't revealed the composer's name yet because I don't want other people contacting him with similar requests.  I myself have no music writing / transcribing experience.  The music editing is done solely within Hyrule Magic.  The songs themselves are mainly from other games, so far, yet they're appropriate to their locations.  There is at least one song written from scratch, but I can't even say what it's used for because it would reveal something mind-blowing about the ASM hacking.  (No, I'm not going to reveal any of the ASM hacking yet, either.)<br><br>
+
+Several people offered names for those "top edge brick extensions" I didn't know the word for.  Ramparts, parapets, portcullis... (the last one is actually a sliding metal gate)  It's easier to work with the shorter version, btw, so I've ditched the larger sketch.  I know the soldiers have less to hide behind, but I want to leave space between them and the higher walls.  The next screen shots will reveal what I have in mind.<br><br>
+
+Most emails, by the way, are enthusiastic, motivational messages about how great the project is, and I really appreciate them.  Please remember, I'm still planning to reply to every email I've received, over time.  This half of the diary entry is just to hold some people over.  :)  <br><br>
+
+<hr>
+<br>
+
+<b>December 2, 2004, Part 2: Progress</b> - It took some careful manipulation and sacrifice of a few details in favor of more important elements, but I've finally managed to determine all 120 tiles for Calatia Castle.  It took me a while to draw all the original sections of the castle in such a way as to only need 120, but not nearly as long as it took during the creation of Epoch Tower.  I even caught a few mistakes, such as accidentally reusing numbers 85 and 86, as seen in a previously posted sketch.  The next step is to actually draw these tiles in a graphics editor so that I can build with them in Hyrule Magic.  But, finally, a problem I've been avoiding has finally surfaced...<br><br>
+
+Palettes.  Ah, the struggle for getting just the right colors, and all the right colors, to make graphics look good.  Of the 8 colors in 1/3 of a palette, one is always grass-green, and the other is black (or dark) for lines.  Only 6 other colors are possible within a single tile, so they have to be chosen well.  I'm uncertain of the exact shades, but there will be two greys, two blues, yellow, and orange.  And this is only if I use *one* palette for the castle, which isn't likely.  If I decide to use two (or all three 3) sections of the palette at a time, more colors among many tiles are possible, but I'll have less original colors to use somewhere else in the game.<br><br>
+
+I know the above paragraph might be difficult to follow, so here's an example.  Hyrule Castle uses three sets of colors.  One set is for blue carpet, mainly.  Another set is for white walls with green decorations.  Still another set is for the pink and gold objects in the courtyard.  All three palettes are used.  Yet, in a different palette, 2/3 of it is used for the pink/purple Sanctuary and its red trees, yet the other 1/3 is shared nearby, for the graveyard's tombstones.  So, I must decide whether to maximize the use of a palette for the castle or to use only some of its potential and save the rest for a different area.  Since the castle is a very important place, I'll probably spend an entire palette on it.<br><br>
+
+Anyway, while playing with colors and trying to budget them across both Past and Future (Light World and Dark World), I've started to question the graphics of earlier places I've created.  First, there's a large section of the clock tower which is very plain, just a solid color with no pattern.  I initially thought it would look okay, but a nagging feeling keeps pulling me back to it.  I'm going to have to make a slight change on the tower to keep that section from looking like glorified NES art, but it won't take long.  Second in graphics satisfaction, I don't want to use the same houses as Zelda 3.  They're flat at the top; it doesn't make sense in the kingdom's cold climate...  One snowstorm could collapse every home in Meridia!  So, without disturbing the layout of the otherwise completed town, eventually I'm going to create original designs, looking at the steeped rooftops of FF6 towns for inspiration.<br><br>
+
+I would have more to write about, but Thanksgiving was the opposite of free time.  Still, I'm ever closer to actually placing parts of the castle into the game.  My goal is to have something to take screen shots of in two weeks' time.  I'm anxious to walk among actual castle walls instead of the large rocks I'm currently using as placeholders...<br><br>
+
+<hr>
+<br>
+
+<b>November 16, 2004, Part 1</b> - Double Digest!  After reading this post, which displays my latest drawings for Calatia Castle (feeback, feedback!), continue down the page for an additional post, which weighs the work ahead for the game and whether The Wait is measurable in months or years.<br><br>
+
+As I write this, I have used up all but five of the tiles alloted to creating the castle, yet I need several more.  My budget is 120 tiles; I will have to give up an object or two, or reduce the details on some things, to allow for other more important parts of the castle to exist.  Right now I'm considering the artwork on the banners, and possibly some other decorations, but I hate to give up anything.  Maybe I can recreate something more conservatively... time will tell.  Here are some scans of the castle tunnels, which are partly open to debate, should anyone voice an opinion.  :)<br><br>
+
+The first picture shows an example of the 'south style' wall which is 1/4 the size of the north style wall.  (East and west walls are 1/2 the size of the north style wall.)  The second picture shows an example of a horizontal tunnel, which is slanted parallel with the vertical bricks.  The last picture shows an example of a vertical tunnel, complete with wooden gate.  Note that with both tunnels, Link can walk anywhere between the two dotted lines.  In two of the three pictures, the graph paper's gridlines are almost impossible to see, but the numbers indicate the different tiles required.  There are more uses for the tiles than just walls, but I'm not going to scan their sketches since they don't do justice to the finished products' graphics.<br><br>
+
+<center>
+<img src="images/diary_south-wall.gif">
+</center>
+<br><br>
+
+<center>
+<img src="images/diary_tunnel-h.gif">
+</center>
+<br><br>
+
+<center>
+<img src="images/diary_tunnel-v.gif">
+</center>
+<br><br>
+
+If you have any opinions or advice, <a href="mailto:zack76@juno.com">please email me!</a><br><br>
+
+<hr>
+<br>
+
+<b>November 16, 2004, Part 2</b> - I'm considering posting diary entries every two weeks, instead of weekly, for a number of reasons.  First, feedback has become rare, leading me to believe that not many people are frequent visitors.  Second, progress is so slow that, while I could talk quite a bit about recent developments, focus would be on minute details which I alone must scour.  Third, I must use my time wisely each day, as precious little is allotted toward free time not spent with other people.  Fourth and last, I won't have to feel badly for missing a week, which currently is the case.  Zelda3C continues to progress, but overworld structure creation is not a topic that excites people to 'stay tuned'.  I may post weekly at times, depending on developments, but for now it's much easier to commit to two or three entries per month.<br><br>
+
+Many of you have realized that the pre-design process of Zelda3C is measured in years, not months, since it has taken me a few years just to get information, programming, planning, etc, together.  At a glance, it seems it could take years to create Zelda3C itself, as well.  Here are a few reasons why I don't believe this is true.  I write this for myself as much as for diary readers, as it helps me to persevere rather than be discouraged.<br><br>
+
+First, there aren't that many places in the overworld which will require full-scale block creation.  The clock tower, main town, and castle have all costed me great amounts of time, but they're also unique locations.  Most places are composed of things in nature, like rivers, trees, and mountains, which are much faster to arrange.  Sure, I still have quite a few sets of original blocks to create, but most of them won't be as difficult.  The outside of the final dungeon will be among the hardest, but usually I'll be concentrating on smaller structures which are much easier to build.  (To build an outdoor structure means to draw everything on graph paper and determine which 8x8 tiles are repeatedly needed, being careful not to need too many, and then to arrange them with their new graphics into larger blocks which are needed to place the structure on the overworld.)<br><br>
+
+Second, the overworld is the hardest part of editing the game.  When it's finished, the game will actually be more than 50% complete, in terms of efforts required.  I chose to concentrate on the overworld first because (a) it links all the indoor locations together, making indoor places depend upon it, and (b) because it requires the most work.  I couldn't see myself constructing dungeons while the overworld looms ahead of me; better to master and complete that project first.  Anyway, the game won't take "years longer" because the overworld will not, and the rest of the game should be created much faster once the outdoors is finished.  (This isn't to say I won't work on indoor locations before completing the overworld...)<br><br>
+
+Third, the second-longest task in the game is indoor creation.  This includes all dungeons, caves, houses, etc.  Although there are almost 300 different screens to create, the room editor in Hyrule Magic is very easy to use.  Instead of worrying about individual tiles, what they look like, whether they're solid or path, etc, I'll be reusing objects which already exist.  Even though I have very few rooms finished, I've experimented with the editor greatly, and feel confident that the time required to complete each room will be based upon how long it takes me to decide how to arrange each room.<br><br>
+
+Fourth and last, the other tasks involved with creating Zelda3C are (a) easy and/or quick, (b) already finished, and/or (c) in the hands of other people.  Yes, although I'm the creator of Zelda3C, I'm leaving graphics improvements, music composition, and beta testing largely to others who are often more capable than I.  Sure, I'll create some graphics, while taking some from other games, but I won't spend large amounts of time drawing in pixels when someone more talented could be doing it.  I'm a great judge of music, but not a composer, so I'm staying away from transcribing songs using Hyrule Magic.  As for beta testing, I'm playing the game thoroughly as I build it, but several people are willing to play the game early and try things I may never think of.  It's nice to know I'll have help along the way, yet right now there's no one to share my 'vision' with to the extent that they could help create the adventure itself.<br><br>
+
+In conclusion (LOL, I wrote a Zelda3C essay!), I've spent a few years (off and on) preparing myself for creating Zelda3C, and for the past few months I've actually been creating it.  I've spent a long time getting to the quintessential point of editing the rom safely, quickly, and effectively.  Although my free time has decreased in recent months due to life in general, I've never felt more anxious and excited about my project.  I'm not sure if most people have lost interest or provided me with 'quiet time', but interest will rejuvinate when the game is ready.  I'm convinced that the Quest for Calatia will rival Zelda 3 in the same ways that Outlands is said to rival the original Zelda.  Zelda3C may become more popular than ZeldaC, in fact, simply because this is Zelda LTTP redesigned, a SNES game with far more to offer than its grandfather.  But this makes it a much larger project, a challenge I continue to meet with each passing day...<br><br>
+
+<hr>
+<br>
+
+<b>November 3, 2004</b> - It never ceases to surprise me how long editing this game takes.  Or rather, how much of my limited time I spend on a single task.  I'm still working on the castle walls.  The castle has improved greatly since last week -- it's more detailed and decorated on paper, with almost nothing missing in the blueprint.  I would love to scan this blueprint, which shows the entire castle, block by block.  But doing so would be a major spoiler, since you can't explore everything in one visit.  I have decided, however, to scan and present two sketches which reveal my plans for the castle as a whole.  In both pictures, dotted lines denote areas where Link can walk behind something (ie, tower cones, tunnels).<br><br>  
+
+<center>
+<img src="images/diary_castle-wall.gif">
+</center>
+<br><br>
+
+The above scan is a sample wall, close-up, without any banners or windows added.  I've posted this to request feedback -- I'm not entirely sure the vertical wall looks normal, and I haven't chosen which type of top edge brick extensions to use.  (What are those called, anyway?)  I've drawn two types, both of which are almost too 3D.  I'm leaning more toward the examples adjacent to the tower, although in one case it's slightly stretched horizontally, causing more 8x8 blocks to be required.  The top bricks to the right of the vertical wall are a new idea, but they're also a bit strange.  I'm very happy with the tower, and you have no idea how long it took me to create that.  I tried several sizes, different cone tops, and even diagonal towers to place at corners, although they were really strange.  Opinions and suggestions are appreciated.<br><br>
+
+<center>
+<img src="images/diary_castle-zoom.gif">
+</center>
+<br><br>
+
+This is a small piece of a much larger blueprint, which displays some of the castle's elements.  Everything is drawn in a simplistic way, with details and impressive graphics to be added later.  Note that the towers look round, like rockets, here.  The actual tower appearance is represented in the previous scan -- not at all curved.  The walls, you might say, are slanted almost like pyramids.  This is because I don't want to create front-view-only walls.  I almost excluded north-facing walls, with plans to simply allow Link to walk behind walls south of him.  But the extension of high walls across paths would completely cover certain paths, such that you could never see Link where one wall is south of another wall.  The wall style I've chosen is similar to mountains and cliffs, such that you can see all sides.  While it might look strange in places, it provides the most normal playing experience.  Also, I know it would be fun to walk around on the ledges, but it can't happen where Link can also walk under the ledges.  Only indoors does the game support walking under <b>and</b> over the same area.  Sorry, just one plane of existence outside.<br><br>
+
+My next step is to draw close-up views of actual parts of the castle, just as I have with the first scan in this diary entry.  After drawing all the elements close-up, I can identify and number each unique 8x8 block.  I will draw their graphics and build new 16x16 & 32x32 blocks as I create the castle in the overworld.  This process is no longer new to me, since I've already made Epoch Tower; I know it will go smoothly.  It's time to work out the final details...  Write me if you have any suggestions!<br><br>
+
+<hr>
+<br>
+
+<b>October 26, 2004</b> - Hahahah, I should be going to bed right now, but I'm so excited that I can't shut the computer down before I write about this.  For the past month or so, I've been struggling off and on with Calatia Castle's walls.  Well, the basic wall concept is easy -- just look at Hyrule Castle for heights of S, E/W, and N -- but everything beyond that required careful consideration.  And now I'm ready to draw the graphics, which will replace Hyrule Castle's graphics.<br><br>
+
+First, I had to decide how to represent the square baracades that repeat along the tops of the walls.  You know, those traditional blocks that archers can hide behind.  I've made them as 3D as the walls, so that Link can walk behind them, should he climb that high.  Next, I had to decide upon tower supports.  These are rounded tower segments that are built into the main walls, with cone structures at the top.  The normal vertical style is great, but I spent too long trying to make diagonal towers for the main corners.  The graph paper sketches caused frowns among family members, so I've decided not to use towers that look like they're tipping over.  Last, structurally, I've decided upon the proper shapes of overhead bridges that Link can walk underneath.  There are two types:  horizontal and vertical.  They can't be walked over since blocks are set either in front or behind Link, never both at once.  (Multiple planes exist indoors only.)  They make the castle seem more complex, and they're great decoration.<br><br>
+
+A few other problems existed for the castle, which are now solved.  In one case, the scrolling messed up because you can't enter the center edge of a large playing area from the center edge of a different large playing area.  This was resolved by shifting the entrance, which turned out better than the original plans.  In another case, a certain low-security area was allowing Link to slip from one world to another too soon.  Using a scanned copy of my graph paper, I shifted the walls in MS Paint to seal that section.  (It was difficult to achieve while staying 3D-correct.)  The last major problem regarded certain things residing beyond the scope of the in-game screen.  Why create cool structures if the player can't see them from where Link's standing?  Now everything's shifted around and a lot has been added to the blueprints.  I can finally see exactly which 8x8 blocks I need to draw.  Once the graphics are drawn and applied to the game, I can create the necessary pieces and build Calatia Castle in the overworld!<br><br>
+
+<hr>
+<br>
+
+<b>October 18, 2004</b> - Last night, both my brothers and I were hanging out in the back room, diligently working on important things.  The younger was playing Earthbound on the ZSNES, and kept bugging me for help with getting through Moonside.  The older (still, younger than me) was fighting with algebra and bugging me for help with the Quadratic Formula.  Whenever I wasn't helping either one, I was focused deep on the Town of Meridia, on my laptop.  A night like many others, mp3s playing in the background, three more technical problems with the village every time I tested the ROM.<br><br>
+
+And then I realized...  The elusive goal, obscured by details, was suddenly achieved.  There was nothing left to take care of.  The grass, paths, houses, trees, mountains, and riverbanks were all flawless.  The entire town was completed!  I couldn't believe it!  Everywhere I looked, the town was seamless.  It's great to stand back and look at a finished project after so much painstaking construction.  Not since I placed the top section of Epoch Tower has working on the game felt so good.<br><br>
+
+I'm glad that I spent the extra time ironing out the issues in town -- no longer will it reside in the back of my mind while I'm building other areas.  I thought I would have time to make in-ROM additions for Calatia Castle as well, this week, but it didn't work out that way.  As soon as I unlock more free time, the castle will be my primary focus.<br><br>
+
+<hr>
+<br>
+
+<b>October 9, 2004</b> - At this point, I can say that the town of Meridia is 95% complete, on the outside.  The interiors of houses are not yet created, but setting them up won't take very long.  All I have left is to clean up the mountain in the lower left corner of town, and to make a few new blocks that contain both town pathway and mountain shadow, adjacently.  I've built onto the town sporadically, between working on other areas of the game, and it's nice to see that this time I'm completing the final section.
+<br><br>
+
+One of the most important things about overworld design is creating new structures while discarding old ones.  My greatest work in this respect is Epoch Tower, an extremely tall clock tower which plays a vital role in the story.  The Zelda 3 structures I've 'spent' to create it are Sanctuary and Witch's Hut.  But as I've said, my wife has convinced me that this tower is too critical to show early screen shots.  It's a shame, though, because it demonstrates how 'new' the outdoor destinations will feel.  On the bright side, I'm planning to show Calatia Castle when it's completed, and it will have an impact all its own.
+<br><br>
+
+The reason I've brought up the topic of outdoor structures is that I have created a small one which I can reveal right now.  It's nothing compared to the tower, but it's a hint of what is possible.  I haven't decided whether it's finished, structurally or graphically.  Suggestions are appreciated, via email or the message boards; please contribute your thoughts.  The first picture shows my method of finding which tiles to graphically modify, by temporarily loading a bitmap with hex values drawn on each tile.  (Link enters the Matrix...)  The second picture displays the final (?) product, a stone bridge similar to the original game's wooden bridge, albeit smaller.
+<br><br>
+
+<center>
+<img src="images/diary_town-bridge_1.gif"> <img src="images/diary_town-bridge_2.gif">
+</center>
+<br><br>
+
+Since graphic tiles must be given up in order to create new things, I have again taken something else out of the game.  In the bridge's case, the game no longer has a weathercock structure.  (Makes you wonder where the bird is hiding, hehe)  There are still plenty of tiles left over from that, so I'll be creating two new objects for Lellow Farm, an area which is otherwise completed.  Much later on, I'll probably replace the current house blocks with those of my own design, since I'm not fond of houses with flat rooftops.  ...I'm still tempted to reveal Epoch Tower, which is a *real* example of creating a new outdoor structure, but I'm taking it slow and not revealing too much at once.<br><br>
+
+I've been asked recently why I haven't spent much time working *indoors*, on things like caves, houses, and dungeons.  It's true -- most of my actual in-game progress has been on the overworld, barring simpler things like graphics, palettes, text, and other changes.  My indoor progress has been neglected thus far, because it's a totally different kind of game editing situation.  I've chosen to focus on the overworld because I believe it's the hardest to work with.  I've learned a lot about indoor editing and I've made a few indoor locations, but I have yet to complete a dungeon.  However, I'm prepared to do so, especially since the 'shared header' problem that used to hinder progress is no longer an issue.  I'm going to concentrate on that side of things after a few more outdoor locations are finished.<br><br>
+
+This week, overall, has been really difficult for me -- I've had almost no time for fun whatsoever.  Next week, however, I'm determined to finally put my castle blueprints to use!  The castle should be easier to build than the town, and it will definitely be easier to create than the tower, which required a lot of learning and new programming.  It won't look anything like Hyrule Castle, yet current sketches look too much like a typical castle.  If you have any great castle feature ideas, let me know.<br><br>
+
+<hr>
+<br>
+
+<b>September 28, 2004</b> - It's been two days since my last post.  Now I can say, on average, I'm posting weekly.  :)  Actually, my real reason for returning so soon is the two screen shots in the previous diary entry.  They both display areas that, at the time, needed to be fixed!<br><br>
+
+In the first picture, I've lowered the diagonal cliff which borders the water.  This is the proper height, made obvious by the mountain's corner, beside the dock in the older picture.  In the second picture, I've cleaned up the stone pathway and the fence beside it.  There were other changes made in this area, such as sliding the tree south so that Link collides with tree roots instead of finding half a path he can't fit through.
+<br><br>
+
+<center>
+<img src="images/diary_cave-home_4.gif"> <img src="images/diary_cave-home_3.gif">
+</center>
+<br><br>
+
+Well, that was some of last night's progress.  I'm going to continue working on the town <b>right now.</b>  :)  And by the way, since these don't really seem like town pictures, I'll mention that somebody lives inside that cave...<br><br>
+
+<hr>
+<br>
+
+<b>September 26, 2004</b> - It's been half a month since my last post.  I'm very sorry for the long wait.  I've been away from home so much, I almost forgot what my apartment looks like!  It's a good thing I have a laptop, or I wouldn't have gotten anything done!  But the laptop only has internet access at work, and it doesn't (yet) have an FTP client.  Anyway, it's nice to finally do things at home besides sleep...<br><br>
+
+For this diary entry, I'll focus on the night where I worked on Zelda3C from around 10pm to 7am.  I pulled an all nighter while doing my laundry.  (The dryer is very slow.)  In all that time, I fought with the overworld while my brother was playing Diablo II on a different computer.  He may have had more fun, but my results are more satisfying.<br><br>
+
+Another quarter of the main town is now finished, and much of the last quarter is completed.  These areas contain a large river which flows through town, and I've spent forever building cliffs, yards, bridges, and a dock which all contain it.  It's still very difficult to find certain blocks I need, since I get confused with the different ways the mountains can slant and join together.  Hopefully this will get faster with practice.  Another problem concerns the heights of different cliffs as they come together.  I had one mountain wall leading toward the river, and another mountain height being created by a waterfall.  Completing this in a way that physically makes sense was very challenging.<br><br>
+
+I don't know if the last paragraph makes any sense at all, but to sum it up, I had a hard time making different sections line up in terms of cliff heights and space I've allowed for this area.  To make up for skipping a week in the diary, here are the first two diary screen shots!  In the first, you can see how I placed a waterfall amid my cliff situation.  In the second, you can see how I "split" the cliff as it leads west, to force it to be shorter. Maybe it seems simple in the end, but actually putting it together took some work.
+<br><br>
+
+<center>
+<img src="images/diary_cave-home_2.gif"> <img src="images/diary_cave-home_1.gif">
+</center>
+<br><br>
+
+I need to get back into working on the castle, but it will be quite a project to make all the smallest elements from scratch.  I feel like there's still something more I need to dream up to make the castle realistic and great to look at.  I think I'll go search for castle pictures on the 'net and get some inspiration.....<br><br>
+
+<hr>
+<br>
+
+<b>September 9, 2004</b> - Lots of bug fixes and discoveries!  The first bug was a problem in Hyrule Magic, cause still unknown, which duplicated sprites in one area onto another area.  (Described last week, the fence maze sprites.)  It turned out that one area began to mimic another area, so that any sprite I placed in one, I would also find in the other.  Thanks to Sephiroth3 (as always), the rom is fixed, and hopefully the bug won't occur again.
+<br><br>
+
+The second bug, which I didn't mention last week, caused the music in the beginning of the game to fade or hang when Link walked east out of area 2A.  This was actually caused by a conflict in ASM hacking (yes, ASM) and was related to the flute boy's instrument fading sequence.  The problem is resolved, though I'm still not sure why it was only an issue in the game's beginning story.
+<br><br>
+
+As for the discoveries, I can now change which items are given to Link by sprites, in select cases.  I won't say which -- that would spoil it -- but certain sprites will offer Link items he had to acquire from chests in the previous game, and the items previously offered by these sprites will now be in chests.  With this new freedom, I've solidified my plans for these sprites, as well as other related plans.
+<br><br>
+
+Here's a quick hint to make up for being cryptic...  If you throw the standard boomerang into the fairy's pond, you won't get a better one.  But if you throw something *else* in.....
+<br><br>
+
+<hr>
+<br>
+
+<b>September 2, 2004</b> - Life has gotten worse instead of better.  I'm in the midst of a crisis I can't describe, and it's taking a major toll.  I haven't been in front of this computer in several days, so I couldn't update this diary until now.  But, I *have* had my  my laptop while away, so I've finally made more progress.  I will persevere, both in real life and in Zelda3C life.
+<br><br>
+
+First of all, with Sephiroth3's help, I've learned how to fix the so-called rock's stairs bug.  It wasn't a bug in Hyrule Magic, but rather an absence of a new overlay.  In other words, I didn't know I needed to place the four stairs' tiles myself!  LOL  And no, I can't just draw something else besides stairs to place under the rock, because the game *will* place stairs automagically when you first remove the rock, no matter what.
+<br><br>
+
+Secondly, I've ran into a new HM bug, and this time it really is a bug.  I haven't reported this one yet, so if you're reading this, Seph3, here it is...  I placed two sprites on a certain screen (the two people who time you in the fence maze) and then ran the game to greet them.  Unless I enter their screen from the east side, they refuse to clock my time!  Okay, that's not the bug.  What *is* the bug is that they each appeared twice in the screen!  How many referees do we need?  hehe  But wait, maybe they aren't allowed in a screen that big, and the game is compensating for the gigantic area...
+<br><br>
+
+Thirdly (is thirdly a word?), I've developed a new means of torturing Link while he's swimming.  Aww, who would want to torture poor Link?  As a game designer, I am both Link and Ganon...  (Not that Ganon's the villain this time.)  The new trap I've developed allows Link to possibly swim right over some painful nettle, or underwater spikes, etc, and get hurt while he's doing it!  No longer must nature rely on Zoras to make swimming a pain.  No sprites (monster) nor ASM (another monster) required!  And of course, I can use actual "cactus type" walls that he can't swim over. Don't worry, I won't make the water debris maze *too* frustrating...<br><br>
+
+The above discovery was made because of a fellow Zelda 3 hacker who reminded me about overworld block types that aren't in the original game.  I've always known about these types, and I have plenty of areas that plan to use the new types, but I hadn't tested them with water yet.  The two types (among others) that I'm definitely using are spiked floors and slippery floors.  If you're walking on spikes outside (or ice) and you approach deep water, you'll jump in.  But if you then swim toward the spiked floor (or ice), you'll swim right through it!  This is a pain if you meant to have spiked floors (or ice) next to water.  But if you simply throw some spiked floor segments into your deep water (and change their graphics), you have instant barnicles!<br><br>
+
+In other Zelda3C news (am I still typing in the same entry?!), I've started working on areas adjacent to Calatia Castle.  I actually want to be working on the castle itself, but until I get several consecutive, uninterrupted hours, I can't properly design the new blocks required to assemble it.  (You know, walls, pathways, flag poles, gardens, rooftops, etc.)  So now there is more land that looks like rivers, trees, and cliff sides, and less land that looks like a checkered green chessboard.  Also, I've been testing / placing sprites in several areas, which led to that bug I need to investigate...<br><br>
+
+Well, this entry is three times longer than the others, and it's time to end.  I look forward to my next laundry day (this weekend), because that's likely when the laptop will be on fire with even more developments...<br><br>
+
+<hr>
+<br>
+
+<b>August 24, 2004</b> - Bad news!  No progress was made this week.  While I did think about the game and make a few plans in my head each day, I have no accomplishments to report.  Last week was unusual, and I actually expect this week to continue the trend.  Just too much going on, too much I'm responsible for and busy with.  You know how life can get.  =/
+<br><br>
+
+But is there anything I could talk about, in case people are really stopping by here every week?  Hmm...  Yes, I could describe the bug in Zelda3C I discovered, a few days after the last diary entry.  When Link dashes into a stack of rocks (or lifts a single, giant rock), if a stairway is hidden underneath, it will lead to an indoor location.  The bug occurs when Link walks back outside:  the rock (or rock pile) he got rid of is already replaced, and he's standing on top of it!  Link *could* just step south to get down, but still, those are some rude rocks!  This problem will be dealt with soon.
+<br><br>
+
+Well, time to tackle real life again.  I'm hoping this weekend will give me lots of time for new progress.  I can't wait for the chance to create my new castle blocks!
+<br><br>
+
+<hr>
+<br>
+
+<b>August 17, 2004</b> - This week's highlight is the creation of Calatia Castle's blueprints (outdoors).  On multiple pages of graph paper, this series of drawings shows all walls, paths, doors, mirror points, etc, for both LW and DW versions of the castle.
+<br><br>
+
+Normally I don't like to create advanced locations before creating the early places (I usually design chronologically), but the significance of the DW version is such that I was forced to design both places at the same time, to make sure they agree in terms of the mirror, warp tiles, and hard-coded aspects of both areas.  In fact, thinking ahead, there are several other areas that will be created concurrently...
+<br><br>
+
+Now that I know exactly how the castle should be laid out across this overworld area, I can see which 32x32 blocks need to be created.  In service of this goal, I'll recycle the old Hyrule Castle blocks, decide upon all the small 8x8 blocks I need, arrange them to make "pictures" of castle segments, and automagically generate the 16x16 and 32x32 puzzle pieces.  Other small tasks exist, as well -- the castle palette will be changed, along with all of the castle graphics.  Since this is my 2nd area with new unique graphics, I expect the process to go much faster, especially since there's no code to write this time around.
+<br><br>
+
+<hr>
+<br>
+
+<b>August 11, 2004</b> - This week, I've been preparing to build Calatia Castle.  This will be my first area that not only contains custom blocks (like Epoch Tower), but is actually filled everywhere with their repeated use.  But, before I start constructing the different types of pieces needed, I'm focused on the overall map of the place.  Because of specific plans in the dark world version, I can't lay out the castle any way I want.  The "mirror ties" between them are especially critical, here.  Not only that, I also have to be careful about the castle's role in the opening story, in which only certain parts are accessible.
+<br><br>
+
+So, building the castle requires planning multiple stages of the game at once.  And this, of course, requires digging out all my notes from various places and sources.  The DW map was missing for a while, as were some post-it notes and napkins containing important thoughts and ideas.  My piles of unorganized, unsorted plans had built up over the months.  So I tackled this adventure first, handling it the same way as last time, with a sketch book containing diagram numbers, referenced in computer documents for each area, by page number.  I have everything overworld-related in order, now.  There's still a mountain of unplaced indoor puzzle ideas to somehow categorize, but I'm not ready for them yet, anyway.
+<br><br>
+
+I've learned more about what I can and can't do for this particular area, and my information is readily available.  For the rest of this week, I plan to take care of preliminary things, like placing rocks down as walls to mark off areas in the DW, finding the best places for sprites (soldiers), and designing a castle map that will accommodate everything I need this location to contain.  After that, I start creating and placing the pieces!
+<br><br>
+
+<hr><br>
+
+<a href="mailto:zack76@juno.com">
+<img src="gamemakr24.gif"
+alt="GameMakr24" border="0" align=left>
+</a><br>
+Questions? Ideas? Suggestions?<br>
+<a href="mailto:zack76@juno.com">
+Write to me!</a>
+<br><br><br>
+
+<a href="index.html">Return to Zelda3C's main page</a>
+<br><br>
+
+<hr><br>
+This site is not affiliated with nor endorsed by Nintendo in any way.<p><p>
+</td></tr></table></font>
+</BODY></HTML>

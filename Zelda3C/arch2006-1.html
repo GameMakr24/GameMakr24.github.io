@@ -1,0 +1,234 @@
+<HTML><HEAD>
+<TITLE>Zelda 3 Challenge ~ Quest for Calatia</TITLE>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="keywords" content="emulation, emulate, emu, roms, emulating, NESticle, final fantasy, NES, SNES, Nintendo, message board, hacker's forum, hack, hacking, hackers, megaman, metroid, samus, goonies, ghost's 'n goblins, mario, luigi, super, super mario, challenge, smb3c, cg, metroidc, smbc, zeldac, zelda3c, zelda, the legend of zelda, link, hotm, hotw, hack of the month, hack of the week, hf, peach, x-4000, GameMakr24">
+<meta name="description"
+content="Zelda 3 Challenge ~ Quest for Calatia - A complete rewrite of A Link to the Past.">
+<style fprolloverstyle>A:hover {color: #ABB4D3; text-decoration: underline}</style></HEAD>
+
+<BODY text=#AAAAAA bgColor=#000000 leftMargin=0 topMargin=0 link="#6a78b1" vlink="#6a78b1" alink="#6a78b1" background="triforce.gif">
+
+<table border=0>
+<tr><td><pre>     </pre></td>
+<td width=800>
+
+<FONT face="Arial" size=3>
+<br><br>
+
+<center>
+
+<img src="z3c-logo.jpg" alt="Banner courtesy of Ouranos">
+<br><br><br>
+
+</center>
+
+<a href="mailto:zack76@juno.com">
+<img src="gamemakr24.gif" alt="GameMakr24" border="0">
+</a><br><br>
+
+<b>July 30, 2006</b> - I'm thrilled to announce that the town of Meridia is FINALLY complete!  Everything I listed previously has been resolved. Even the farm house & storage shed are completely redone, using new house pieces. The town has been a major project unto itself, lasting several months because of the unique problems involved. It even took longer than Calatia Castle, which has completely new graphics and structures. It's so nice to walk around town, enter any house I want (though interiors aren't finalized yet) and not see anything that needs changed or fixed.<p> 
+
+My original plan was to move on to Harmony Forest, north of town, using leafy trees AND pine trees similtaneously to create an initially peaceful, yet eventually deadly, wooded area. Instead, I'm keeping my promise to my best graphics artist and finally putting our large collection of new monster graphics to use. I'm setting up a ROM (never to be made public) which showcases every new monster appearance. It's a testing ROM & holding area to see how well the creatures animate during interaction. As monster graphics are finalized, they will be copied into the actual Zelda3C ROM. I started with one of the hardest monsters, it seems, as the graphics submitted don't fit into the tiles allowed. This one is about 2/3 finished now. Its presence throughout the game really sets Calatia apart from Zelda 3's Hyrule.<p>  
+
+I'm sorry that updates and progress have been so limited. I remain ever loyal to this project, yet I must always let real life take priority. I have a great treasure gathered here on my hard drive, teeming with painstaking programming, incredible plans and ambitious quest design. My little brother is tired of hearing me always say "Yeah, that *is* cool -- it gives me a great idea for Zelda3C!" while we're out & about or playing games. I still have no idea how much longer this project will take -- I only know that it has to be right, down to every detail. It's the curse and blessing of the perfectionist.<p>
+
+<hr><br>
+
+<b>June 19, 2006</b> - Quick update before bed.  The past month hasn't been very eventful, Zelda3C-wise.  I've been sitting on a checklist of final things to do before the town can be considered absolutely finished.  There were 8 items on this list, and now there are only 3.  I've spent a few hours each weekend working out these final issues.  Weekdays lately have been fruitless -- it's like the nights keep getting shorter.  Sigh, where does the time go?<p>
+
+1.) Forest entrance - The area north of town needed a great tree-filled area to make it seem like you're actually nearing a forest.  So, I finally put the pine trees to real use, overlapping many of them, creating new blocks to represent their new positions, and making Link's backyard a lot nicer in the process.<p>
+
+2.) Wide stairs with narrow path - The paths and stairs which ascend the cliff divider weren't lining up nicely, so it didn't seem like the "roads" were well planned.  This was caused partly by all the shifting I did with the houses as I lined them up for hookshot use as well as having space to jump down from the rooftops.  Now the stairs are the correct width and the north/south path even meets the "hedge-walled bridge" directly.<p>
+
+3.) Door frame exits - This is one of the issues I still need to tackle.  I have a few different types of door frames which vary at the top.  I knew they couldn't vary at the sides, but -- my mistake -- the tops get picky as you *leave* each house.  I have a way of fixing this which involves using the "bomb door frame" since you can't bomb any house walls in Meridia.  I just have to sit down and shift the uses of a few tiles to make it work.<p>
+
+4.) Chimneys to add - Many of the houses never got chimneys because, being log cabins, they should be easy to add.  They weren't quite that easy, since placing a chimney behind a cabin made it look like it didn't truly attach to the house.  I took the time to give ALL houses chimneys because (a) it gets really cold in Calatia's climate and (b) I want to use "chimney smoke" on certain houses, which was previously used by the Dwarven Swordsmith house.<p>
+
+5.) Store with sign - I needed to work out some issues to get a sign over the store's door.  Didn't take long.<p>
+
+6.) Stone palette - The houses which have rock walls instead of logs have always bugged me because the palette was too bright.  It looked too similar to the paths, like it could be walked on.  I drew with several different color combinations, but didn't like any of them.  At this point, I have dark "cement seal" with dark pink "rocks".  It looks kind of creepy, lol, so I'll change the actual palette's dark pink to dark grey soon.<p>
+
+7.) Diagonal mountain VS. clifftop - There were two places where a diagonal mountian base met a diagonal clifftop.  Though it looked cool, Link could follow along the side of the mountain and bypass the jump-down tiles at the clifftop's edge.  This allowed him to push against the cliff's mountain tiles themselves, making it look like he'd found an invisible wall.  By changing which tiles I was using, I fixed the problem which retaining the great look of the mountain's edge.<p>
+
+8.) Arrows fly through log cabins - This is the last of the three issues still remaining on this checklist.  If you stand to the north of a log cabin and shoot an arrow south, the arrow flies straight through!  This is because the wall type is "short", meaning it stops Link but not objects.  It never collides with a "tall" wall tile because it first comes in contact with a "jump south" tile, which lets it fly forever until after a "jump north" tile is encountered, which in these cases, never happens.  Anyway, I need to swap some tiles, which may be easy or hard, depending on whether I find an appropriate tile that isn't used often.<p>
+
+As you can imagine, this checklist is actually a sample of what I go through on a regular basis.  Little issues are always coming up; I find myself resolving things in particular areas before I can move back into the greater scheme of things.  Who could imagine there would be this many things to do in town!?  I often reassure myself that most of the places in this overworld won't be as problematic.  Plus, it's all part of the learning experience.  :)  I just wish I could get started on Harmony Forest itself, but I hate leaving anything unfinished.<p>
+
+<hr><br>
+
+<b>May 21, 2006</b> - It feels early to be updating again, since I haven't done much since the last update.  But on the bright side, I'm writing <i>before</i> anyone has had a chance to say "You haven't updated in a while..."<p>
+
+At last, I have created the last of the hookshot houses.  There are now 7 different houses in the town, some of which are reused here and there.  There are log cabins you can walk behind, log cabins you can walk on top of, stone arched houses you can walk behind, stone arched houses you can walk on top of, and variations on some for their sizes and the colors of rooftops and windows.  There's only one house left -- the main store -- and its only difference is that it gets a unique sign over its door.  I'll have that one done in a matter of minutes.  Most of these others, however, have taken weeks per house to get Link to react properly to each one.  No more getting stuck behind a house because of walls or indentions you can't see.  No more hopping off the roof incorrectly or <i>walking off</i> the roof where jump-down tiles don't respond.  This last house was truly "lucky number 7" since it only took me an hour or so.  Number 6 was the worst one, as it took the longest and still doesn't look as nice as the others.<p>
+
+I had put off creating that 7th house, however, because I knew I needed to find more 16x16 (bush sized) blocks.  I've already used up those which composed Kakariko town, and I didn't want to steal from other areas.  32x32 blocks (large rock sized) have been plentiful up to this point -- I'm still using up the ones from Hyrule Castle, which were originally devoted to making Calatia Castle.  But 16x16 blocks go really fast, since Nintendo was great at not needing too many to express many different parts of buildings.  I thought about swiping a few from the Lost Woods, but that would short me from making the new forest.  I didn't want to borrow from anywhere.  Then I realized something fantastic -- since I had already planned out and created most of the alternate * Meridia, I didn't have plans for the blocks used by the Village of Outcasts!  Suddenly I have over 100 new blocks at my disposal; I could relax and create freely once more.<p>
+
+* Zelda3C has time periods, ie. past & future, instead of light and dark worlds.<p> 
+
+<center><img src="images/h-house1.gif" width=512 height=446></center><p>
+
+Link is standing on house 4, aiming at house 6.  His own house from his childhood (not shown) is east of here.<p>
+
+<center><img src="images/h-house2.gif" width=512 height=446></center><p>
+
+Now he's on house 5, facing house 7.  He can hookshot there or toward the north or west.<p>
+
+<center><img src="images/h-house3.gif" width=512 height=446></center><p>
+
+Here he stands on house 7, where he can travel to house 5 or jump down from the east, west, or south sides.<p>
+
+<center><img src="images/h-house4.gif" width=512 height=446></center><p>
+
+South of house 7 is a cleared area where the main store will be located.<p>
+
+There aren't any more major projects regarding Meridia.  I just need to clean up the paths and fences, plant some more bushes, and duplicate a few of the houses I've made.  Once these minor things are cleaned up, the town will be completed.<p>
+
+<hr><br>
+
+<b>May 1, 2006</b> - As I was just telling the last few people that have emailed me, I've been working hard on Zelda3C, and I'm usually so focused on building / fixing "the next small thing" that I jump right in and keep going until I have to quit.  Which, of course, means I save no time for updating this diary.  Whoops.  Skipped April, didn't I?<p>
+
+I've decided to do another Part 1 / Part 2 diary entry again.<br>
+It's a double-feature!  lol<p>
+
+Part 1 - An Overview of the Great Outdoors<p>
+
+My project as it concerns overworld development can be summarized into a series of "sessions".  Each session is a building or a section of a building.  Each session can be up to 4x7 32x32 blocks, or 8x14 16x16 blocks.  This is the canvas size I use while creating new overworld structures such as houses, new trees, buildings, etc.  Think of a rectangle that could hold up to 112 Zelda 3 bushes, or 28 "large rocks."  Here are the total sessions I've completed.<p>
+
+Epoch Tower - 5 sessions.  Base, three mid-sections, top.  No screenshots released.  Takes up half of a small playing field, such as Haunted Grove or Sanctuary.<p>
+
+Calatia Castle - 22 sessions.  Various walls, towers, doors, tunnels, and gardens.  Screenshots have been previously released.  Takes up ALL of a large playing field, which makes it bigger than Hyrule Castle.<p>
+
+Leafy and Pine Trees - 2 sessions, but felt like more.  One tree is full of leaves and shaped like a traditional Zelda tree, while the other is tall and narrow.  Both exist similtaneously, which will make Harmony Forest really fun to create.<p>
+
+Town of Meridia - 6 sessions so far.  Each session is a single house, though other houses have been built using these sessions' pieces.  There should only be about 2 more sessions, hopefully, since I'm running out of resources for the town.  Each house is either a wooden house, a stone house, with a log cabin roof, a slanted tile roof, or some hybrid in-between.  Each house can either be walked behind OR walked on top of, via the hookshot.<p>
+
+Now, you may dare wonder how many sessions must be created in all of Zelda3C.  I usually don't like to talk about how long things will take, but here's a hint of the vast journey ahead.  Keep in mind, <i>please,</i> that I'm getting faster and better at this as the sessions go on.  Lots of learning and trials have paved the way for future sessions.<p>
+
+Code-Named, Alphabetized Areas:<p>
+
+1.) Alcatraz - Small area, whole new set of graphics.<br>
+2.) All Is Still - Large area, half a set of graphics.<br>
+3.) Ancient Ruins - One large area and one small area.  Whole new set of graphics.<br>
+4.) Calatia Beach - (Actual name.)  Two large areas, whole new set of graphics.<br>
+5.) Dead and Undead - Two small areas, half a set of graphics.<br>
+6.) Death Mountain - (Actual name.)  The side that's not Hyrule, half a set of graphics.<br>
+7.) Distant Land of Magic - Two large areas, whole new set of graphics.<br>
+8.) Harmony Forest - (Actual name.)  One large area, half a set of graphics.<br>
+9.) Haunted Distortion - Large area, whole new set of graphics.<br>
+10.) Heart of the Story - Large area, whole new set of graphics.<br>
+11.) Last Place in Game - Large area, whole new set of graphics.<br>
+12.) Mountain Tops - Small area, half a set of graphics.<br>
+13.) Ode to Raj & Rhonda - Two large areas, but only a session's worth of new designs.<br>
+14.) Origin of Power - Half a small area, half a set of graphics.<br>
+15.) The Other Mountain - Large area, whole new set of graphics.<br>
+16.) The Other Tower - Small area, whole new set of graphics.<br>
+17.) Where That Which Falls Stays Where It Is - Large area, whole new set of graphics.<p>
+
+These names aren't intended to tease (well, maybe a little) but mostly to represent the number of major overworld tasks I still have left to complete.  Both Epoch Tower and Calatia Castle required a whole new set of graphics and tile arrangements, yet Calatia Castle took longer both because of its sheer size as well as its complexity.  But, as I said, I'm making less mistakes and becoming more efficient with each session I get through.  These areas span either / both of the game's time periods (formerly LW/DW).  Also, consider that there are just as many sets of graphics and special areas in the original overworld.  East Palace, Lost Woods, Pyramid of Power, Ice Island, just to name a few.<p>
+
+Obviously, I expect the overworld to take MUCH longer than the dungeons and caverns.  I haven't done much dungeon development, of course, since I've held out for a program that handles header management.  Dungeon creation is just a matter of using the same objects in new puzzles and new room maps, much of which already exists on paper.<p>
+
+Part 2 - Building a Town from Scratch<p> 
+
+I described in my last entry that building these houses has taken a long time.  That was just the tip of the iceburg!  I'm <i>still</i> rebuilding the town of Meridia, and at this point, I've thrown out more than half of the town I created when I first started.  All my problems revolve around one central dream:  the ability to hookshot from house to house.  I have big plans for all the items Link gets, and I've always felt that Zelda 3 didn't use the hookshot enough outdoors.  You only needed it to cross the broken Death Mountain bridge and the river near the pyramid.  Calatia has lots of hills and ravines, yet hookshot-houses are a complication I can't pass up.<p>
+
+To this end, I've struggled with the layout of the houses, arranging them in new ways, moving pesky hillsides out of the way, deleting all the paved paths, etc.  Certain secrets require the houses to be in certain places.  The fact that Link can hookshot across also means that Link can jump down.  Either fence or hedges must border all of these houses, or else Link can walk up to a house and "jump onto it" from the ground.  Link is never allowed behind any of these houses, since they aren't drawn for him to disappear behind them, as he can with non-hookshot houses.  And then there were the problems with house designs themselves...<p>
+
+As listed above, there have been six town sessions, one for each original house.  (Oh!  I forgot to mention the farm with its well you can jump into, its plowed farmland and haystacks.  That's anoter session or so.)  The first two houses were the stone house and log cabin you can walk behind.  They were challenging, but not too hard.  The third session was a larger log cabin I call Link's House -- it's our hero's home prior to setting out for Hyrule.  It was the easiest, since its location atop a hill prevents ascending it with the hookshot.  And by the way, thanks to some corrections submitted, the cabin roof now extends as far down as the gable which stands over the door.<p>
+
+The fourth house forced me to question the entire hookshot idea.  The first time Link pulled himself onto the shooting galllery, I found lots of problems with the arched rooftop.  (See previous entry for a screenshot of this roof type.)  The edge closest to the landing point prevented Link from firing the hookshot in the opposite direction without first scooting about a pixel away from it.  The diagonal north peak could be "walked out of" instead of always pushing Link in a diagonal direction.  The southern diagonal border almost never moved Link diagonally, causing the screen to jerk and sometimes zapping Link to somewhere else on the screen.  So, I hit four walls at once.<p>
+
+The left and right edges weren't too hard to manage -- I moved the hookshot points inward, even though it means Link can walk horizontally across a surface that isn't supposed to be flat.  The upper edge was fixed, in part, by placing invisible walls behind the house that support the diagonal walls.  (Invisible = green grass you can't walk on.)  The south diagonal walls were beyond help -- Link could not be controlled properly against the edges, no matter what, so I finally resorted to creating stair-shaped walls that match the way the front of the house is drawn.  There were a few other minor tricks I had to pull, but they're technical and hard to describe.<p>
+
+After the fourth house, I redesigned the mountains surrounding the town, for several reasons that relate to the alternate time period, the secrets that can be accessed later, and the appearance of the town itself.  Paths along mountain edges are desolved to make uninterrupted mountainsides, while ledges hang over a broad cliff to expand front yards.  I'm thrilled with the outcome.  :)  I needed to draw most of the mountain tiles in the game, arranging them in such a way as to find tile numbers faster and easier.<p>
+
+When I finally got back to creating houses, I made the 5th house similar to the fourth, with slanted roof and log walls.  I created it too short, though, because of (then) a lack of area to work in, and ended up starting over soon after.  This house isn't as long as the shooting gallery; it has less roof space to walk on, but its final revision works well.<p>
+
+House number six.  Evil number 6.  I was more frustrated with this house than I had been with my trees in their darkest hour.  It was so bad that I knew if I walked away for a few days, I'd end up taking another long break from the game, and I've had too many of those already.  So I stuck it out, day in, day out, with my wife and brother saying things like "Are you *still* working on that town??"  Now that the house is finalized, it's actually pretty cool, but I may always hate it for the trouble it gave me.<p>
+
+I thought creating a log cabin rooftop would be easy -- no diagonal edges, just edges that let you jump left, jump right, and jump south.  However, the hookshot is a very sensitive device.  It can attach to a hookshot tile even if you aim two tiles below it.  This meant that Link could land low enough to walk east past what he attached to without turning.  Worse, it meant that he could land ON the tiles which let him jump or hookshot south.  Standing too low, he could still jump south, but he couldn't walk left or right without first walking north.  I moved the hookshot tiles high enough to prevent this, but doing so moved them too close to another hookshot point -- one intended for north/south travel.  Grabbing this part of the house early would place him half on the roof and half in the wall, trapping him.<p>
+
+How could I allow Link to A) travel east to this house, B) walk across to the other side, C) travel south to the next house, and D) travel north to return to this house, without getting stuck by grappling the wrong tile?  I had to not only place the hookshot tiles in the perfect places -- I had to expand the rooftop as well, without making the house bigger and taking up valuable space reserved for jumping down and walking between houses.  Making everything fit is always the hardest puzzle to solve.<p>  
+
+First, I allowed Link to walk on the very peak of the house, which is actually good because he still doesn't get his feet completely on top of it.  Before, it seemed like he refused to walk that high.  (And no, he can't jump north over the back side -- what would *that* look like in reality?  Would you jump from the highest point of a rooftop to the ground below?  LOL)  I tried removing a tile or two from the "jump east" edge, so that the hookshot could never recognize that it crossed a gap at that point.  This only caused the valid hookshot area to be ignored by the grapple -- frustrating when you see it pass right over.  The rooftop still wasn't big enough, so, after tormenting myself with every other scenario, I finally added another "log" to the bottom row.<p>
+
+In the process of all this struggling, I placed a chimney at the right edge of the house, providing a reason for Link's hookshot to not grab the north/south access point, which would trap him.  Currently the hookshot flies over the whole chimney when it clearly should collide and bounce back early.  But the chimney looks really good there, and I may be able to fix this later by placing a pine tree between the houses at that point.<p>
+
+The seventh house is on the horizon.  It's very similar to the 6th house, but longer, so it's hardly a session by itself.  But a new problem emerged which made me realize that "finishing town before posting the next diary entry" is not a good idea, nor was it ever.  (Yes, far better for me to write short, regular entries than a long entry which tests the boundries of bedtime and fans' patience.)<p>  
+
+The new problem is simple.  Link can't go inside ANY of these houses!  I thought I'd try placing an entrance tag over one of the doors, just to make sure the tiles which are "in-front" are enough to cover Link as he enters and exits.  I've been through this with Epoch Tower & Calatia Castle, but they have animated double-doors which required special attention.  Focused on other things, I wrongly assumed an entrance would work just by placing a tag over a few wall tiles.  I immediately dissected many door frames in the original game, and by trial & error, made a list of exactly which tiles will support entrance tags.  Now I just have to swap some wall tiles in my houses -- more minor repairs -- to make the doorways operational.<p>
+
+I'm always thinking that I'm near the end of town creation, but so far it's like Bowser's never-ending stairway in Mario 64.  Had I known that creating hookshot-based houses would take this long, I might've shyed away from it.  Good thing I didn't, because troublesome as it is, it's actually very cool to fly from house to house like Spider Man, whisking myself across the town from above.  There aren't any completely new types of houses -- just odds and ends, like a house which carries the store sign, and a long duplex which has two doors.  Simple stuff which will fall right into place, now that the hardest parts are finished.  Cleaning up their yards has always been easy, so I may really be almost done.  I'm SO ready to work on something new!<p>
+
+<hr><br>
+
+<b>March 14, 2006</b> - You would not believe how long I've spent lately on these houses.  :)  Much of Friday, and *all* weekend long, I've continued to juggle house tiles and rearrange what I thought I already had figured out on paper.  The four tile sets involving both trees and both houses are all intertwined: Set 58 has the leafy tree as well as special-purpose house pieces I'm not allowed to set anywhere else.  Set 61 has the pine tree so that it can exist anywhere in the game (instead of houses) but it has to keep the front door so that it'll still open.  Both of these sets are so graphically complex that just changing a few pixels could prevent compressing them enough for the ROM.  Sets 83 and 77 hold the rest of the house tiles, along with the other village tiles.  All 256 pieces of all the houses and trees had to fit into these sets, with each one placed where they would function as a path, wall, etc.<p>
+
+But I'm off on a tangent here.  Point is, many tiles need to have multiple versions in order to make the houses function properly.  I have wall-type roof pieces and path-type roof pieces that are identical so that Link can walk behind houses yet not too far south.  This is nothing new for me, as I've already created a large tower and a huge castle which let you go behind walls and through tunnels.  I've never had this many tiles (for two trees and two versions of two houses) to consider all at once, before.  When I say "two versions of two houses", I mean that each house, be it a log cabin or a stone arched house, can either be walked behind or walked on top of.  Never both at the same time, as the overworld doesn't support multiple planes.  If the back of a house is fenced off, chances are you can get up there with the hookshot.  ;)  This meant I needed even more tiles, so I had to be creative and use each tile as much as possible.<p>
+
+<center><img src="images/house_stone.gif" width=512 height=446></center><p>
+
+Here is my big, beautiful stone house.  You can walk behind this one and run along the walls to the north and south without being interrupted by anything in between.  All the roof tiles are path tiles, set in front of Link, except where they need to be walls to keep Link out of the house's interior and out of the hill to the north.  The east and west walls stop arrows before they cross any house graphics, while the south wall allows arrows to reach the second row of tiles.  The roof pattern is loosely based on FF6, while the stone pattern is made from just 12 original tiles, many of which are repeated a few times without being too obvious.  I wonder if there's some way to improve the looks of these stones with just three shades of turquoise?<p>
+
+If you couldn't walk behind this house, you could walk on top of it instead.  The four little round notches would be hookshot compatible, just as trees and bushes are.  You would walk diagonally up one slope and then diagonally down the other.  The left and right edges would be tiles of type "jump east" and "jump west", respectively, so that you could jump down.  But as I've said, this house uses the path versions of these tiles.  I'm going to build the other version of this house tonight, as soon as I finish this diary entry.<p>
+
+<center><img src="images/house_cabin.gif" width=512 height=446></center><p>
+
+Here is Calatia's first log cabin.  You can walk behind it as well, 4 tiles deep, as revealed by the cabin's shadow.  The cabin was much easier to create than the stone house, though the gable above the door kept getting harder as I needed to spare more tiles.  Again, the arrows are stopped in all the right places (er, except in one spot..) but this is something taken for granted and kind of trivial, though my brother doesn't think so.  The log graphics are based almost entirely from the wooden poles that hold up the Kakariko sign in the original game.<p>
+
+If you couldn't walk behind this cabin, you could walk on top of it.  Both little round notches, whether or not they look really good, would be hookshot compatible.  Rather than use path tiles, I would use ladder tiles, so that Link ascends and descends slowly, as if he were on stairs.  Three of the rooftop edges would be "jump east", "jump west", and "jump south" tiles.  The peak of the house would act as a wall.  (Link doesn't *want* to walk on the back side of the roof!)  But this particular house lets you walk behind it; I'm going to build the other version of this house tonight, time permitting.<p>
+
+<center><img src="images/house_mess.gif" width=512 height=446></center><p>
+
+As you can see, I still have an entire village of houses to renovate.  The whole town is being overhauled to make sure you can hookshot from house to house and reach multiple out-of-reach places.  The townfolk will likely still be arguing about property lines even after the game is finished.  (Just kidding, there won't be any jokes that reference game design, except those I've written for the game's instruction manual.)  At least these old houses don't look like they're made solely of red or blue pine tree pieces anymore...  All these strange blocks are waiting to be spent in the process of building new houses.  Think of this as a lego set before it's built.  :)  The pieces are ready, and arranging them is the easy part.<p>
+
+In other news:  No musical progress yet (the guy's busy with school, which is always a priority) but a few of you have voiced concerns about using FF4's Four Fiends battle song as Zelda3C's boss song.  It's one of my favorite battle songs ever, yet I realize it's pretty well known and established in the Final Fantasy universe.  I would never use a main theme from another game, such as an FF overworld song or the Chrono Trigger theme (in spite of Calatia's time travel aspect).  But does Four Fiends cross the line?  If so, what other song should we try?<p>
+
+I'm at the end of a long tree / house project that, breaks aside, has taken a lot longer than I expected.  As soon as I finish Meridia, I'm heading north to plant the many trees of Harmony Forest.  It's a huge area (same size as the Lost Woods) but, as the name implies, it's not that dangerous.  Townfolk pass through regularly to reach either Lellow Farm or the peaceful cemetary.  But this is Zelda 3 *Challenge*, so the woods won't be safe for long...<p>
+
+<hr><br>
+
+<b>March 4, 2006</b> - At last, I get to write an update about *progress!*  Almost every day since I wrote the last entry, I've been hard at work on these trees.  First, I tackled the orange tree problem which was making tree clusters have trunk piece patterns between each tree.  I thought I had entered an incorrect tile, but turns out I had just drawn one wrong.  Here's an updated screenshot of the finalized orange trees.<p>
+
+<center><img src="images/orange_trees.gif" width=512 height=446></center><p>
+
+The rest of my time has gone into pine trees, which involved choosing old tiles to replace, constructing around 40 blocks which contain the tiles, and then painstakingly adjusting the graphics to make everything look perfect.  The trees still look kind of messy, actually, but they seem more realistic that way.  My little brother tested the game and pointed out that you could shoot arrows through the tree trunks; I fixed that too.  Colliding with these trees feels just like you would expect, with all the right branches "in front of Link" as he walks against / behind them.<p>
+
+<center><img src="images/pine_trees.gif" width=512 height=446></center><p>
+
+It's SO nice to have these trees finished!  Next, I'll return to the main town, which is currently a disaster area.  All the houses look like they're made from red or blue pine tree branches (still) so I need to create the pieces of houses with the tiles I've already constructed.  My next update will show log cabins and shops made from stone.<p>
+
+I'm so happy!  :)<p>
+
+OH!  P.S: Someone new has offered to help with music!  This second composer is working with the boss song.  If he succeeds, the repetitive Zelda boss music will be replaced by the Four Fiends song from Final Fantasy 4.  It's a lot longer, of course, so another less important song will probably be sacrificed, but it's worth it.  :)  I can't wait to hear what it sounds like, transposed with Zelda's instruments...<p> 
+
+<hr><br>
+
+<b>February 28, 2006</b> - "Why haven't you updated your site lately??"  I've received a lot of these emails lately.  In the old days, it used to be that I would work on Zelda3C regularly, but forget or neglect the public side of things.  Nowadays, I've rarely worked on Zelda3C, yet I have this site in the back of my mind, urging me that people are wondering where I've gone.<p>
+
+The project hasn't died.  Nor has my enthusiasm to work on it.  I still love developing the quest and creating new places to explore.  But a few things have played into my falling out of the habit.  Most importantly is some news I hadn't announced because people would fear I'd have even less time:<p>  
+
+I'm a father now!  :)  My son was born two weeks ago; the past few months have been packed full of preparations and, more recently, burpings and diaper changes.  In some ways, this does steal some time because my wife needs me.  But in other ways, it gives me more time because she's preoccupied with him and the many family members who have rushed back into our life.  Anyway, he's really cute and he already enjoys Final Fantasy music...<p>
+
+My time hasn't been the only issue delaying this game.  It has also been those &*#^@$ trees, a project on their own which frustrated me every step of the way.  Eventually I got tired of working on them, allowing their printouts and notes to become buried by other things on my desk.  Out of sight, out of mind, you know.  Of course, the proper thing would've been for me to set the trees aside and create something else in the game.  Why not take a break on one part of the game when there are so many other parts that need attention?  Except, I can't stand to have unfinished work lurking to the side which can't be put off forever.  I'd much rather knock out current issues before I open another can of moldorms...  Ultimately, those trees are essential to the entire well-being of the overworld, as they serve not only as diverse scenery but also as two kinds of barriers to separate areas properly.<p>
+
+I don't like to write updates that may come across as "making up excuses" but I dislike "disappearing" even more.  I've spent lots of time with my wife and son, lots of time with my little brother, and as always, lots of time at work.  When I finally find myself with a few hours alone, it's depressing to think that I could get good & involved in the project, only to be barred once more for a couple of weeks.  Yet when something is foremost in my mind, I magically find more time for it.  As I upload this web page, I'm laying out all the information I need to pick up where I left off, in those beautiful, complicated trees.  At last check, I was 80% done creating them.  With some love and attention, I can move on to creating Calatia's main forest really soon.  I hope.<p>
+
+<hr><br>
+
+<a href="mailto:zack76@juno.com">
+<img src="gamemakr24.gif"
+alt="GameMakr24" border="0" align=left>
+</a><br>
+Questions? Ideas? Suggestions?<br>
+<a href="mailto:zack76@juno.com">
+Write to me!</a>
+<br><br><br>
+
+<a href="index.html">Return to Zelda3C's main page</a>
+<br><br>
+
+<hr><br>
+This site is not affiliated with nor endorsed by Nintendo in any way.<p><p>
+
+</td></tr></table></font>
+</BODY></HTML>
